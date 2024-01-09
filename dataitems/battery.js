@@ -11,7 +11,7 @@ DataItemProvider.register("battery", {
 
   onDataUpdate(data) {
     this.value = `<span class="battery-level-`;
-    this.value += this.getBatteryLevelClass(data.usable_battery_level);
+    this.value += this.getBatteryLevelClass(data.battery_level);
     this.value += `">`;
     this.value += data.usable_battery_level;
     this.value += `%</span> / <span class="battery-level-`;

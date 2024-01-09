@@ -1,15 +1,15 @@
 {
-  "name": "Magic-Mirror-Module-Tesla",
-  "version": "4.0.0",
-  "description": "MagicMirror2 Module to display Tesla Stats.",
+  "name": "Magic-Mirror-Module-Rivian",
+  "version": "4.0.0r",
+  "description": "MagicMirror2 Module to display Rivian Stats.",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattdy/MMM-Tesla"
+    "url": "git+https://github.com/mattdy/MMM-Rivian"
   },
   "keywords": [
     "magic mirror",
     "smart mirror",
-    "tesla",
+    "rivian",
     "teslafi",
     "tessie",
     "module"

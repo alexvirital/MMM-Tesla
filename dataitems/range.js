@@ -9,7 +9,7 @@ DataItemProvider.register("range", {
   field: "Range",
 
   onDataUpdate(data) {
-    this.value = this.context.convertDistance(data.ideal_battery_range);
+    this.value = this.context.convertDistance(data.battery_range);
   }
 });
 

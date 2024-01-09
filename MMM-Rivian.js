@@ -1,11 +1,12 @@
 /* Magic Mirror
- * Module: MMM-Tesla
+ * Module: MMM-Rivian
  *
  * Originally By Adrian Chrysanthou
  * Updated by Matt Dyson
+ * fucked up by alex meretten
  * MIT Licensed.
  */
-Module.register("MMM-Tesla", {
+Module.register("MMM-Rivian", {
   defaults: {
     animationSpeed: 1000,
     refreshInterval: 1000 * 60, // Refresh DOM every 60 seconds
@@ -65,7 +66,7 @@ Module.register("MMM-Tesla", {
   getStyles: function () {
     return [
       "https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css",
-      "MMM-Tesla.css"
+      "MMM-Rivian.css"
     ];
   },
   start: function () {
@@ -110,7 +111,7 @@ Module.register("MMM-Tesla", {
 
     content.innerHTML = "";
     var table = `
-      <h2 class="car-name"><span class="zmdi zmdi-car zmdi-hc-1x icon"></span> ${t.display_name}</h2>
+      <h2 class="car-name"><span class="zmdi zmdi-car zmdi-hc-1x icon"></span> Link</h2>
       <table class="small">
 		`;
 
@@ -171,7 +172,7 @@ Module.register("MMM-Tesla", {
       // If the node_helper socket has only just opened, refresh the DOM to make sure we're displaying a loading message
       this.updateDom();
     } else if (notification === "DATA") {
-      Log.info("Tesla received new data");
+      Log.info("Rivian received new data");
       // We've received data, so parse and display it
       var data = JSON.parse(payload);
       if (!data) {
