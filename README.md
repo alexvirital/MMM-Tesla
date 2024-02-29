@@ -2,15 +2,18 @@
 
 This an extension for the [MagicMirror](https://github.com/MichMich/MagicMirror). It is entirely based on MMM-Tesla, and the fact that TeslaFi reused the API, wholesale, for Electrafi. 
 
-With this module, you can display the status of your Rivian vehicle from [ElectraFi](https://www.teslafi.com/signup.php?referred=warlrus). Many different pieces of data can be shown, such as the battery level, temperature, lock status and plenty more!
+With this module, you can display the status of your Rivian vehicle from [ElectraFi](https://www.teslafi.com/signup.php?referred=warlrus). Many different pieces of data can be shown, such as the battery level, temperature, lock status and plenty more! Probably. If you can figure out how to reverse-engineer the fact that it changed names slightly. So that's the point here.
 
 This is a partial re-write of the original MMM-TeslaFi by [f00d4tehg0dz](https://github.com/f00d4tehg0dz), which can be found [here](https://github.com/f00d4tehg0dz/MMM-TeslaFi).
 
 ## Screenshot
 
-![screenshot.png](doc/screenshot.png)
+i should do that
 
 ## Installation
+
+ph - this is old from here on down
+
 
 Open a terminal session, navigate to your MagicMirror's `modules` folder and execute the following commands:
 
