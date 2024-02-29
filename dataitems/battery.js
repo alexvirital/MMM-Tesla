@@ -13,7 +13,7 @@ DataItemProvider.register("battery", {
     this.value = `<span class="battery-level-`;
     this.value += this.getBatteryLevelClass(data.battery_level);
     this.value += `">`;
-    this.value += data.usable_battery_level;
+    this.value += data.battery_level;
     this.value += `%</span> / <span class="battery-level-`;
     this.value += this.getBatteryLevelClass(data.charge_limit_soc);
     this.value += `">`;
