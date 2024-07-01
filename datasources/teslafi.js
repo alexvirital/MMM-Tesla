@@ -43,7 +43,7 @@ class TeslaFi extends DataSource {
         headers: { TeslaFi_API_TOKEN: this.config.apiKey }
       },
       function (error, response, body) {
-        Log.info("TeslaFi response was " + response.statusCode);
+        Log.info("ElectraFi response was " + response.statusCode);
         if (!error && response.statusCode === 200) {
           self.callback(body);
         }

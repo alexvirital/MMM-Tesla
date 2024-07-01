@@ -4,7 +4,7 @@
  * Created by Matt Dyson
  * Adapted from original code by Adrian Chrysanthou
  */
-DataItemProvider.register("charge-time", {
+rDataItemProvider.register("charge-time", {
   icon: '<span class="zmdi zmdi-battery-flash zmdi-hc-fw"></span>',
   field: "Charging",
 
@@ -28,7 +28,7 @@ DataItemProvider.register("charge-time", {
  * Created by Matt Dyson
  * Adapted from original code by Adrian Chrysanthou
  */
-DataItemProvider.register("charge-added", {
+rDataItemProvider.register("charge-added", {
   icon: '<span class="zmdi zmdi-flash zmdi-hc-fw"></span>',
   field: "Charge Added",
 
@@ -51,7 +51,7 @@ DataItemProvider.register("charge-added", {
  * Created by Matt Dyson
  * Adapted from original code by Justyn R
  */
-DataItemProvider.register("charge-power", {
+rDataItemProvider.register("charge-power", {
   icon: '<span class="zmdi zmdi-flash zmdi-hc-fw"></span>',
   field: "Charger Power",
 
@@ -75,7 +75,7 @@ DataItemProvider.register("charge-power", {
  * Created by Matt Dyson
  * Suggestion by johnny-co
  */
-DataItemProvider.register("power-connected", {
+rDataItemProvider.register("power-connected", {
   icon: `<span class="zmdi zmdi-input-power zmdi-hc-fw"></span>`,
 
   onDataUpdate(data) {

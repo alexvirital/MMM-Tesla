@@ -2,7 +2,7 @@
  * This is the base class for any extension that provides a data item
  */
 
-var DataItemProvider = Class.extend({
+var rDataItemProvider = Class.extend({
   icon: null,
   field: null,
   value: null,
@@ -28,10 +28,10 @@ var DataItemProvider = Class.extend({
 });
 
 // Collection of all DataItemProviders that are registered with the module
-DataItemProvider.providers = [];
+rDataItemProvider.providers = [];
 
 // Register a new DataItemProvider with the module
-DataItemProvider.register = function (identifier, details) {
-  DataItemProvider.providers[identifier.toLowerCase()] =
-    DataItemProvider.extend(details);
+rDataItemProvider.register = function (identifier, details) {
+  rDataItemProvider.providers[identifier.toLowerCase()] =
+    rDataItemProvider.extend(details);
 };
