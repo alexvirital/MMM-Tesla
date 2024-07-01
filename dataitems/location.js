@@ -6,7 +6,7 @@
  * Created by Matt Dyson
  * Adapted from original code by Justyn R
  */
-DataItemProvider.register("map", {
+rDataItemProvider.register("map", {
   onDataUpdate(data) {
     this.height = this.setParam(this.config.maps.height, "number", 150);
     this.width = this.setParam(this.config.maps.width, "number", 300);
@@ -93,7 +93,7 @@ DataItemProvider.register("map", {
  * Created by Matt Dyson
  * Adapted from original code by Justyn R
  */
-DataItemProvider.register("location", {
+rDataItemProvider.register("location", {
   icon: `<span class="zmdi zmdi-pin zmdi-hc-fw"></span>`,
   field: "Location",
 

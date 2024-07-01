@@ -1,7 +1,7 @@
 "use strict";
 
 /* Magic Mirror
- * Module: MMM-Rivian
+ * Module: MMM-Tesla
  *
  * Originally By Adrian Chrysanthou
  * Updated by Matt Dyson
@@ -32,7 +32,7 @@ module.exports = NodeHelper.create({
       return;
     }
 
-    Log.info("Rivian fetching data from source: " + this.source.config.name);
+    Log.info("Tesla fetching data from source: " + this.source.config.name);
     this.source.fetchData(function (response) {
       Log.info("Received data: " + response);
       self.sendSocketNotification("DATA", response);
@@ -54,7 +54,7 @@ module.exports = NodeHelper.create({
           return;
         }
 
-        Log.info("Rivian received configuration");
+        Log.info("Tesla received configuration");
         this.config = payload;
 
         switch (this.config.source.name.toLowerCase()) {
@@ -68,7 +68,7 @@ module.exports = NodeHelper.create({
 
           default:
             Log.error(
-              "Unknown source provided for Rivian data: " +
+              "Unknown source provided for Tesla data: " +
                 this.config.source.name
             );
             break;
@@ -78,7 +78,7 @@ module.exports = NodeHelper.create({
     }
 
     if (this.config !== null && this.source !== null && !this.started) {
-      Log.info("Rivian helper starting");
+      Log.info("Tesla helper starting");
       this.sendSocketNotification("STARTED", true);
       this.started = true;
       this.getData();

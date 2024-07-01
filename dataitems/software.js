@@ -4,7 +4,7 @@
  * Created by Matt Dyson
  * Adapted from original code by Justyn R
  */
-DataItemProvider.register("version", {
+rDataItemProvider.register("version", {
   icon: `<span class="zmdi zmdi-download zmdi-hc-fw"></span>`,
   field: "Version",
 
@@ -20,7 +20,7 @@ DataItemProvider.register("version", {
  * Created by Matt Dyson
  * Adapted from original code by Justyn R
  */
-DataItemProvider.register("version-new", {
+rDataItemProvider.register("version-new", {
   icon: `<span class="zmdi zmdi-download zmdi-hc-fw new-version">`,
   field: "New Version Available",
 

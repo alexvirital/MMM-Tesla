@@ -4,7 +4,7 @@
  * Created by Matt Dyson
  * Adapted from original code by Justyn R
  */
-DataItemProvider.register("speed", {
+rDataItemProvider.register("speed", {
   icon: `<span class="zmdi zmdi-time-countdown zmdi-hc-fw"></span>`,
   field: "Speed",
 
@@ -24,7 +24,7 @@ DataItemProvider.register("speed", {
  * Created by Matt Dyson
  * Adapted from original code by Justyn R
  */
-DataItemProvider.register("heading", {
+rDataItemProvider.register("heading", {
   icon: `<span class="zmdi zmdi-compass zmdi-hc-fw"></span>`,
   field: "Heading",
 

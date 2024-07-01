@@ -29,7 +29,7 @@ Module.register("MMM-Rivian", {
       "state",
       "speed",
       "heading",
-      "battery",
+      "batteryrv",
       "range",
       "range-estimated",
       "power-connected",
@@ -51,9 +51,8 @@ Module.register("MMM-Rivian", {
     return [
       "moment.js",
       this.file("node_modules/build-url/src/build-url.js"),
-
-      this.file("DataItemProvider.js"),
-      this.file("dataitems/battery.js"),
+      this.file("rDataItemProvider.js"),
+      this.file("dataitems/batteryrv.js"),
       this.file("dataitems/charge.js"),
       this.file("dataitems/driving.js"),
       this.file("dataitems/location.js"),
@@ -75,8 +74,8 @@ Module.register("MMM-Rivian", {
     this.sendSocketNotification("CONFIG", this.config);
     this.providers = [];
 
-    for (var identifier in DataItemProvider.providers) {
-      this.providers[identifier] = new DataItemProvider.providers[identifier](
+    for (var identifier in rDataItemProvider.providers) {
+      this.providers[identifier] = new rDataItemProvider.providers[identifier](
         this
       );
     }

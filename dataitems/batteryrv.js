@@ -5,18 +5,13 @@
  *
  * Created by Matt Dyson
  */
-DataItemProvider.register("battery", {
+rDataItemProvider.register("batteryrv", {
   icon: '<span class="zmdi zmdi-battery zmdi-hc-fw"></span>',
   field: "Battery",
 
   onDataUpdate(data) {
-    const batteryLevel = parseInt(data.battery_level, 10);
-    const chargeLimitSoc = parseInt(data.charge_limit_soc, 10);
-    if (isNaN(batteryLevel) || isNaN(chargeLimitSoc)) {
-    this.value = "Invalid data";
-    return;
     this.value = `<span class="battery-level-`;
-    this.value += this.getBatteryLevelClass(data.battery_level);
+    this.value += this.getBatteryLevelClass(data.battery_range);
     this.value += `">`;
     this.value += data.battery_level;
     this.value += `%</span> / <span class="battery-level-`;
